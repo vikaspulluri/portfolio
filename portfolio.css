@@ -1,0 +1,132 @@
+/* CSS Document for Screens */
+
+/*Using open sans font for the entire page. Imported the font from google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body{font-family: 'Open Sans', sans-serif; font-size: 16px;font-weight: 300;color: #555;margin: 0 auto;padding: 0;max-width: 1920px; background-color: honeydew;}
+header{margin: 0;padding: 0;width: 100%;position: relative;}
+
+/* Text */
+h1 {text-align: center;color: midnightblue;font-family: cursive;text-transform: uppercase;}
+h2 {font-size: 2em;text-align: left;font-family: monospace;color: navy;text-transform: uppercase;}
+h6 {margin: 0.5em 0 0.8em 0;font-size: 1.1em;font-style: italic;font-family: sans-serif;}
+a {color: indigo;text-decoration: none;}
+nav a{color: black;display: table-cell;font-size: 1em;font-weight: 500;width: 100%;text-decoration: none;text-transform: uppercase;vertical-align: middle;z-index: 2;}
+
+/*Global styles*/
+#page{margin: 15px 20px; padding: 0;position: relative;}
+#page::after{content:"";display: block;clear: both;}
+
+/*Nav bar*/
+nav {position: relative;width: 100%;padding: 2% 0%;background-color: #ddd;max-width: 1920px;padding-bottom: 0%;}
+nav ul {display: block;margin: 0;padding: 0;}
+nav ul::after{content: "";display: block;clear: both;}
+nav li {float:left;list-style-type: none;padding: 1em 3.5vw;font-size: 1.4vw;}
+nav li a:hover{color: #f00;transform: skew(-15deg) translateZ(0);z-index: 10;}
+nav.nav-mobile{display: none;}
+
+
+/*Footer*/
+footer {position: absolute;width: 100%;background-color: #ddd;max-width: 1920px;}
+footer ul {display: flex;margin: 0 auto;padding: 0;justify-content: center;}
+footer li {list-style-type: none;padding: 1em 5em;}
+footer .contact-me {text-align: center;font-size: 1.1em;font-weight: bold;}
+
+/*Section Portfolio Content*/
+.content{max-width: 65%;position: relative;left: 0;float: left;padding-right: 25px;}
+.projects-tab {padding: 0px;border: 1px solid #ccc;}
+.projects-tab ul {display: flex;margin: 0;padding: 0;}
+.projects-tab li {list-style-type: none;margin: 0px;width: 50%;text-align: center;cursor: pointer;padding: 10px;}
+.tab.active{background-color: #ddd;}
+.tab-content{display: none;}
+.tab-content.active{display: block;}
+.skill-set {float: left;width: 45%;margin-right: 3vw;margin-top: 5px;}
+div#section-1 {margin-right: 10px;}
+
+/*Skills container*/
+.container:after{content: "";display: block;clear: both;}
+.skills{line-height: 2em;height: 1.1em;font-style: oblique;font: message-box;text-align: end;}
+.skill-container{background-color: #ddd;border:1px transparent;border-radius: 25px;margin-bottom: 10px;height: 1.1em;}
+.php{width: 80%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.css{width: 60%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.jquery{width: 60%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.js{width: 65%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.python{width: 65%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.html{width: 65%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+.sql{width: 70%;background-color: #37cca3;border:1px transparent;border-radius: 25px;}
+
+/*Table css*/
+table, tr, th, td {border: 1px solid black;border-collapse: collapse;margin-top: 1vw;}
+tr,th,td {padding: 10px;}
+tr:nth-child(odd){background-color:#e2e2e2;}
+table.academic-stats tr{border-right: 1px solid black;}
+
+/*Section About me Content*/
+.about-me{max-width: 35%;position: absolute;right: 0;width: 35%;float: left;background-color: beige;}
+.about-me .image-holder{max-width: 30%;padding-left: 9vw;}
+.about-me .image-holder img{width: 15vw;height: 15vw; margin: 0 auto;left: 0;right: 0;position: inherit;background-repeat: no-repeat;background-position: 50%;border-radius: 7.5vw;max-width: 288px;max-height: 288px;}
+blockquote {margin: 0.5vw;color: #444;font-style: italic;font-size: 1.2em;line-height: 1.3em;padding: 0 10px;}
+blockquote.text-holder::before {content: '\201c';font-size: 1.5em;color: orangered;}
+blockquote.text-holder::after {content: '\201d';font-size: 1.5em;color: orangered;}
+blockquote #work-experience{font-weight: bold;}
+
+/*Accordion styling*/
+button.accordion {background-color: #eee;color: #444;cursor: pointer;padding: 18px;width: 100%;border: none;text-align: left;outline: none;font-size: 1.1em;transition: 0.4s;}
+button.accordion.active, button.accordion:hover {background-color: #ddd;}
+button.accordion:after {content: '\002B';color: #777;font-weight: bold;float: right;margin-left: 5px;}
+button.accordion.active:after {content: "\2212";}
+div.panel {padding: 0 1.1em;background-color: white;max-height: 0;overflow: hidden;transition: max-height 0.2s ease-out;}
+
+/*Mobile screens styles goes here*/
+@media screen and (max-width: 768px), screen and (max-device-width: 768px){
+    /*nav bar styles*/
+    nav.nav-desktop{display: none;position: fixed;z-index: 30;top: 3em;padding-top: 0;}
+    nav.nav-mobile{display: block !important;padding: 25px 0;position: fixed;top: 0;z-index: 30;}
+    nav .menu-btn {width: 55px;float: right;background-color: black;height: 50px;display: block;cursor: pointer;position: fixed;top: 0;right: 0px;z-index: 10;}
+    nav .headline {font-weight:bold;color: #000;justify-content: center;text-align: left;padding-left: 5em;font-size: 1.2em;position: absolute;top: .8em;}
+    .menu-btn span {width: 35px;height: 5px;background-color: white;margin: 8px 6px 6px 10px;-webkit-transition: 0.4s;transition: 0.4s;display: block;position: relative;z-index: 25;}
+    .menu-btn.open > #first-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, 16px) rotate(405deg);}
+    .menu-btn.open > #second-line {opacity: 0;}
+    .menu-btn.open > #third-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, -10px) rotate(-405deg);}
+    .nav-desktop ul {list-style: none;background: #1c1c1c;padding: 5px 0;}
+    .nav-desktop li{float: none;} 
+    .nav-desktop li a {font-size:2em;display: block;padding: 0 20px;color: #fff;text-decoration: none;font-weight: bold;text-transform: uppercase;letter-spacing: 0.1em;letter-spacing: 0.1em;line-height: 2em;height: 2em;border-bottom: 1px solid #383838;}    
+    .nav-desktop li:last-child a {border-bottom: none;}
+    .nav-desktop li a:hover,.nav-desktop li a:focus {color: #1c1c1c;background: #ccc;}
+
+    /*page content styles*/
+    #page{margin: 7vw 1vw;position: relative;display: table;}
+    .content{float: none;width: 100%;max-width: 100%;margin-top: 3em;padding-right: 0;display: table-footer-group;}
+    div#section-1{margin-right: 0;}
+    .about-me{max-width: 100%;float: none;width: 100%;position: relative;display: table-header-group;}
+    .about-me .image-holder {padding: 0;margin: 0 auto;display: inline-block;}
+    .about-me .image-holder img {position: absolute;margin-right: 3vw;margin-top: 1em;}
+    blockquote {margin-top: 9vw;}
+
+    /*Table design for mobile view*/
+    table.academic-stats, .academic-stats thead, .academic-stats tbody, .academic-stats th, .academic-stats td, .academic-stats tr { display: block;margin-top: 0vw;}
+    .academic-stats tbody{margin-bottom: 1vw;}
+    .academic-stats tbody:last-child{margin-bottom: 0vw;}
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .academic-stats thead tr { position: absolute;top: -9999px;left: -9999px;}
+    .academic-stats tr { border: 1px solid #ccc; }
+    .academic-stats td { 
+        /* Behave  like a "row" */
+        border: none;border-bottom: 1px solid #eee;position: relative;padding-left: 50%;
+    }
+    .academic-stats td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;left: 6px;width: 45%;padding-right: 10px;white-space: nowrap;
+    }
+    /*Label the data*/
+    .academic-stats td:nth-of-type(1):before { content: "Course"; font-weight: bold;}
+    .academic-stats td:nth-of-type(2):before { content: "College/University"; font-weight: bold;}
+    .academic-stats td:nth-of-type(3):before { content: "Year of pass"; font-weight: bold;}
+    .academic-stats td:nth-of-type(4):before { content: "CGPA/Percentage"; font-weight: bold;}
+
+    /*Footer styles*/
+    footer li{padding: 0;}
+}
