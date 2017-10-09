@@ -11,18 +11,18 @@ h1 {text-align: center;color: midnightblue;font-family: cursive;text-transform: 
 h2 {font-size: 2em;text-align: left;font-family: monospace;color: navy;text-transform: uppercase;}
 h6 {margin: 0.5em 0 0.8em 0;font-size: 1.1em;font-style: italic;font-family: sans-serif;}
 a {color: indigo;text-decoration: none;}
-nav a{color: black;display: table-cell;font-size: 1em;font-weight: 500;width: 100%;text-decoration: none;text-transform: uppercase;vertical-align: middle;z-index: 2;}
+nav a{color: black;display: table-cell;font-size: 1em;font-weight: 500;width: 100%;text-decoration: none;text-transform: uppercase;vertical-align: middle;z-index: 2;font-family: -webkit-body;}
 
 /*Global styles*/
 #page{margin: 15px 20px; padding: 0;position: relative;}
 #page::after{content:"";display: block;clear: both;}
 
 /*Nav bar*/
-nav {position: relative;width: 100%;padding: 2% 0%;background-color: #ddd;max-width: 1920px;padding-bottom: 0%;}
+nav {position: relative;width: 100%;padding: 0%;background-color: #ddd;max-width: 1920px;padding-bottom: 0%;}
 nav ul {display: block;margin: 0;padding: 0;}
 nav ul::after{content: "";display: block;clear: both;}
-nav li {float:left;list-style-type: none;padding: 1em 3.5vw;font-size: 1.4vw;}
-nav li a:hover{color: #f00;transform: skew(-15deg) translateZ(0);z-index: 10;}
+nav li {float:left;list-style-type: none;padding: 1.5em 3.5vw;font-size: 1.4vw;}
+nav li a:hover{color: #fff;z-index: 10;}
 nav.nav-mobile{display: none;}
 
 
@@ -66,8 +66,8 @@ table.academic-stats tr{border-right: 1px solid black;}
 .about-me .image-holder{max-width: 30%;padding-left: 9vw;}
 .about-me .image-holder img{width: 15vw;height: 15vw; margin: 0 auto;left: 0;right: 0;position: inherit;background-repeat: no-repeat;background-position: 50%;border-radius: 7.5vw;max-width: 288px;max-height: 288px;}
 blockquote {margin: 0.5vw;color: #444;font-style: italic;font-size: 1.2em;line-height: 1.3em;padding: 0 10px;}
-blockquote.text-holder::before {content: '\201c';font-size: 1.5em;color: orangered;}
-blockquote.text-holder::after {content: '\201d';font-size: 1.5em;color: orangered;}
+blockquote.text-holder::before {content: '\201c';font-size: 1.5em;color: orangered;font-family: Georgia, serif;}
+blockquote.text-holder::after {content: '\201d';font-size: 1.5em;color: orangered;font-family: Georgia, serif;}
 blockquote #work-experience{font-weight: bold;}
 
 /*Accordion styling*/
