@@ -13,7 +13,7 @@ $(document).ready(function(){
 	toggle_nav_menu();
 });
 /*  * Function to calculate the experience of a candidate.
-	* @arguments : String formatted date. It will take string format of date as argument("yyyy/mm/dd")
+	* @params : String formatted date. It will take string format of date as argument("yyyy/mm/dd")
 	* @variables : 
 		- today 	 =	Date object for present date
 		- startDay   =	Date object for joining date
@@ -49,7 +49,7 @@ var calculate_experience = function(joiningDay){
 };
 
 /*  Function to toggle the tabs in professional skills section
-	@arguments - no arguments
+	@params - no params
 	@variables -
 		- cur 	= 	click event object
 		- divCont 	= 	 string for holding the 'cur' id
@@ -74,7 +74,7 @@ var toggle_tabs = function(){
 }
 
 /*  Function to display/hide the accordion in programming skills section
-	@arguments  - no arguments
+	@params  - no params
 	@variables	-
 		- panel	=	object for holding the html element
 	@return 	- 	no return value
@@ -93,7 +93,7 @@ var toggle_accordian = function(){
 	});
 }
 /*	Function for toggle nav bar menu in mobile screens.
-	@arguments	- 	no arguments
+	@params	- 	no params
 	@variables	-	no variables
 	@return		-	no return value
 */
