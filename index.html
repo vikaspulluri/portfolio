@@ -7,237 +7,247 @@
 	<meta name="description" content="Vikas Pulluri is a Full stack developer currently working in TCS as Assistant system engineer.">
 	<meta name="viewport" content="width=device-width">
 	<link rel="icon" type="image/gif" href="images/vikas_icon.ico">
-	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
-	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
-	<script type="text/javascript" src="js/portfolio.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="css/slick.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="src/canvasjs.min.js"></script>
+	<script type="text/javascript" src="bundle.js"></script>
 </head>
 <body>
 	<header>
-		<nav class="nav-desktop">
-			<ul>
-				<li><span class="link"><a href="#about-me">About me</a></span></li>
-				<li><span class="link"><a href="#section-1">Professional Experience</a></span></li>
-				<li><span class="link"><a href="#section-2">Programming Skills</a>`	</span></li>
-				<li><span class="link"><a href="#section-3">Academic Stats</a></span></li>
-				<li><span class="link"><a href="#section-4">Awards</a></span></li>
-			</ul>
-		</nav>
-		<nav class="nav-mobile">
-			<div class="headline">VIKAS PULLURI</div>
-			<div class="menu-btn">
-				<span id="first-line"></span>
-				<span id="second-line"></span>
-				<span id="third-line"></span>
-			</div>
-		</nav>
+		<div class="top-bar" id="top-menu">
+			<nav class="nav-desktop">
+				<ul class="menu-items">
+					<li class="menu-item">
+						<a href="#" data-target-id="#about" class="active">About Me</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" data-target-id="#professional-exp">Professional Experience</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" data-target-id="#programming-skills">Programming Skills</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" data-target-id="#certifications">Certifications</a>
+					</li>
+					<li class="menu-item">
+						<a href="#" data-target-id="#academics">Academics</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="nav-mobile">
+				<div class="headline">VIKAS PULLURI</div>
+				<div class="menu-btn">
+					<span id="first-line"></span>
+					<span id="second-line"></span>
+					<span id="third-line"></span>
+				</div>
+			</nav>
+		</div>
 	</header>
-	<div id="page">
-		<div class="content">
-			<div class="section" id="section-1">
-				<h2>Professional Experience</h2>
-				<div class="projects-tab">
+	<article>
+		<main class="page-container">
+			<section class="section about" id="about">
+				<div class="title">About me</div>
+				<div class="content">
+					<div class="image-holder">
+						<img src="images/vikas_dp.png" alt="Vikas Pulluri">
+					</div>
+					<blockquote class="text-holder">
+						I am full stack web developer currently working in TCS having experience of <span id="work-experience"></span> years. I would love to take the responsibilities and lead the team in the same way as i have done in the past. I am more inclined towards logical thinking, problem solving and analysis parts of a challenge rather than designing part. I am more passionate about JavaScript based frameworks as it is the only language that made me gone mad while learning.
+					</blockquote>
+				</div>
+			</section>
+			<section class="section professional-exp" id="professional-exp">
+				<div class="title">Professional Experience</div>
+				<div class="projects-carousel" id="projects-carousel">
+					<div class="project" id="project-1">
+						<div class="project-container-box">
+							<h3 class="project-title">E-Commerce Enablement</h3>
+							<p>
+								<span class="key">Role</span>
+								<span class="description">Back end developer</span>
+							</p>
+							<p>
+								<span class="key">Team Strength</span>
+								<span class="description">5</span>
+							</p>
+							<p>
+								<span class="key">Description</span>
+								<span class="description">The objective of this project is to implement e-commerce functionalities on brand sites(non-transactional sites) by utilizing RESTFul web services. We have been given a requirement to make the code that can be reused for multiple brand sites. Successfully launched 7 web sites with e-commerce features. Project duration is 8 months</span>
+							</p>
+							<p>
+								<span class="key">Languages</span>
+								<span class="description">PHP, JavaScript</span>
+							</p>
+							<p>
+								<span class="key">Libraries/Technologies</span>
+								<span class="description">jQuery,RESTFul web services, Drupal, GitLab</span>
+							</p>
+							<p>
+								<span class="key">Functionalities</span>
+								<span class="description">User Management, Cart Management, Checkout Management, Bazaarvoice Integration</span>
+							</p>
+						</div>
+					</div>
+					<div class="project" id=project-2>
+						<div class="project-container-box">
+							<h3 class="project-title">UI Development</h3>
+							<p>
+								<span class="key">Role</span>
+								<span class="description">Front end developer</span>
+							</p>
+							<p>
+								<span class="key">Team Strength</span>
+								<span class="description">Individual</span>
+							</p>
+							<p>
+								<span class="key">Description</span>
+								<span class="description">The objective of this project is to enhance the user experience and user interface of different brand sites. We have been given requirement to improvise the user interaction/experience that will match with the given wireframes. I have worked in this project for one month as i was more interested towards logical part rather than designing part</span>
+							</p>
+							<p>
+								<span class="key">Languages</span>
+								<span class="description">PHP, JavaScript</span>
+							</p>
+							<p>
+								<span class="key">Libraries/Technologies</span>
+								<span class="description">jQuery, GitLab, Drupal, Smarty template</span>
+							</p>
+							<p>
+								<span class="key">Functionalities</span>
+								<span class="description">Web page development</span>
+							</p>
+						</div>
+					</div>
+					<div class="project" id="project-3">
+						<div class="project-container-box">
+							<h3 class="project-title">Website development using Drupal-8 modular approach</h3>
+							<p>
+								<span class="key">Role</span>
+								<span class="description">Back end developer</span>
+							</p>
+							<p>
+								<span class="key">Team Strength</span>
+								<span class="description">5</span>
+							</p>
+							<p>
+								<span class="key">Description</span>
+								<span class="description">The objective of this project is to develop the existing brand sites with different architecture(different frameworks,different platform). We need to create drupal modules(similar to angular components) to render the website page sections. Our main focus is on drupal module development to build the entire site and secondary focus is on UI part, as major UI part has been handled by UI team. Successfully launched 13 sites so far and work in progress for another 16 sites. I have been working in this project for the last 8 months</span>
+							</p>
+							<p>
+								<span class="key">Languages</span>
+								<span class="description">PHP, JavaScript</span>
+							</p>
+							<p>
+								<span class="key">Libraries/Technologies</span>
+								<span class="description">Drupal 8, jQuery, Foundation-6, Sass, Webpack, Gulp, Github, npm</span>
+							</p>
+							<p>
+								<span class="key">Functionalities</span>
+								<span class="description">End to end website development</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="section programming-skills" id="programming-skills">
+				<div class="title">Programming Skills</div>
+				<div class="skills-container">
+					<div class="skills" id="languages-container"></div>
+					<div class="skills" id="frameworks-container"></div>
+					<div class="skills" id="database-container"></div>
+					<div class="skills" id="additional-container"></div>
+				</div>
+			</section>
+			<section class="section certifications" id="certifications">
+				<div class="title">Certifications</div>
+				<div class="certificates-content">
 					<ul>
-						<li class="tab active" id="tab-1">Project-1</li>
-						<li class="tab" id="tab-2">Project-2</li>
+						<li>Pursuing MongoDB course completion certification from mongodb university</li>
+						<li>Attended online workshop series on "JavaScript-The good parts" by "Douglas Crockford" and got lynda certification</li>
+						<li>Attended online workshop series on "ES-6:The right parts" by "Kyle Simpson" and got lynda certification</li>
+						<li>Attended online workshop series on "Node Js API Design" by "Scott Moss" and got lynda certification</li>
+						<li>Pursuing "Angular-5:Complete Guide" course certification from Udemy</li>
+						<li>Pursuing "Angular + NodeJs - The MEAN stack guide" course certification from Udemy</li>
+						<li>Pursuied 4 certifications in lynda.com related to web technologies</li>
+						<li>Awarded with district 1st certification in talent test named "Chakumuki" conducted by "Janvignan vedik" in 2009</li>
+						<li>Awarded with the certificate of participation in the workshop conducted by National Institute of Technology, Warangal for the topic "Touch and Augmented control"</li>
+						<li>Awarded with the certificate of participation in the workshop conducted by Indian Institute of Technology, Madras for the topic of "Vehicle Overhauling"</li>
 					</ul>
 				</div>
-				<div class="tab-content active" id="tab-1-content">
-					<table class="table">
-						<tr><th>Title</th>
-						  <td>Cart as a service</td></tr>
-						<tr><th>Role</th>  <td>Back end developer in the team of 3 members</td></tr>
-						<tr><th>Description</th>  <td>The objective of this project is to implement e-commerce functionalities on brand sites(non-transactional sites). We have been given a requirement to make the code that can be reused for multiple brand sites. It's a fixed time project with the duration of 6 months</td></tr>
-						<tr><th>Functionalities</th>  <td>User management, Cart management, Checkout management, Payment integration, Bazaarvoice integration</td></tr>
-						<tr><th>Technologies used</th>  <td>RESTful web services, PHP, Javascript, JQuery, Smarty template engine, Slim framework, Ajax, GIT, Composer</td></tr>
-						<tr><th>References</th> <td> <a href="https://www.hasbro.com/en-us">Hasbro</a>
-										<a href="https://playdoh.hasbro.com/en-us">Playdoh</a>
-										<a href="https://littlestpetshop.hasbro.com/en-us">Littlestpetshop</a>
-										<a href="https://transformers.hasbro.com/en-us">Transformers</a>
-										<a href="https://mylittlepony.hasbro.com/en-us">Mylittlepony</a>
-										<a href="https://starwars.hasbro.com/en-us">Starwars</a>
-										<a href="https://nerf.hasbro.com/en-us">Nerf</a></td></tr>	
-					</table>
-					
-				</div>
-				<div class="tab-content" id="tab-2-content">
-				<table>
-					<tr>
-						<th>Title</th>
-						<td>Project development</td>
-					</tr>
-					<tr>
-						<th>Role</th>
-						<td>Front end developer</td>
-					</tr>
-					<tr>
-						<th>Description</th>
-						<td>The objective of this project is to enhance the user experience and user interface of different brand sites. It's a endless project, where we have been given requirement to improvise the user interaction/experience and will match the sites with given comps</td>
-					</tr>
-					<tr>
-						<th>Technologies</th>
-						<td>HTML5, CSS3, Javascript, Jquery, Smarty, GIT</td>
-					</tr>
-					<tr>
-						<th>Content Management System</th>
-						<td>Drupal</td>
-					</tr>
-					<tr>
-						<th>References</th>
-						<td>
-							<a href="https://www.hasbro.com/en-us/brands/furreal" title="Furreal homepage">Furreal-Freinds</a>
-							<a href="https://nerf.hasbro.com/en-us" title="Nerf homepage">Nerf</a>
-						</td>
-					</tr>
-				</table>
-				</div>	
-			</div>
-			<div class="section" id="section-2">
-				<h2>Programming Skills</h2>
-				<div class="container">
-					<div class="skill-set">
-						<h6>PHP</h6>
-						<div class="skill-container">
-							<div class="skills php">80%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>Python</h6>
-						<div class="skill-container">
-							<div class="skills python">65%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>JavaScript</h6>
-						<div class="skill-container">
-							<div class="skills js">65%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>JQuery</h6>
-						<div class="skill-container">
-							<div class="skills jquery">60%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>SQL</h6>
-						<div class="skill-container">
-							<div class="skills sql">70%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>HTML</h6>
-						<div class="skill-container">
-							<div class="skills html">60%</div>
-						</div>
-					</div>
-					<div class="skill-set">
-						<h6>CSS</h6>
-						<div class="skill-container">
-							<div class="skills css">60%</div>
-						</div>
-					</div>
-				</div>
-				<button class="accordion">Photo gallery project</button>
-				<div class="panel">
-					<table>
+			</section>
+			<section class="section academics" id="academics">
+				<div class="title">Academics</div>
+				<div class="academics-content">
+					<p>I am from Andhra Pradesh, pursued the Bachelor of technology from International Institute of Information Technology, RGUKT Nuzvid(IIIT-Nuzvid) in the field of Mechanical engineering in the year of 2016.</p>
+					<table class="academic-stats">
 						<thead>
 							<tr>
-								<th>Title</th>
-								<td>Photo gallery project</td>
+								<th>Class</th>
+								<th>College/University</th>
+								<th>Year of Pass</th>
+								<th>Grade/Percentage</th>
 							</tr>
 						</thead>
-						<thead>
+						
+						<tbody>
 							<tr>
-								<th>Description</th>
-								<td>This is a simple social media web application where people can upload their images and able to like or comment the pictures. This application will keep track of image posts and the users who responded to the posts</td>
+								<td>B.Tech(Mechanical)</td>
+								<td>International Institute of Information Technology(IIIT-Nuzvid), RGUKT</td>
+								<td>2016</td>
+								<td>8.58</td>
 							</tr>
-						</thead>
-						<thead>
+						</tbody>
+						
+						<tbody>
 							<tr>
-								<th>Programming languages/Technologies</th>
-								<td>PHP, MySql, HTML, CSS</td>
+								<td>PUC/Intermediate</td>
+								<td>International Institute of Information Technology(IIIT-Nuzvid), RGUKT</td>
+								<td>2012</td>
+								<td>8.99</td>
 							</tr>
-						</thead>
+						</tbody>
+						
+						<tbody>
+							<tr>
+								<td>SSC</td>
+								<td>Sri Chaitanya High School</td>
+								<td>2010</td>
+								<td>94.33%</td>
+							</tr>
+						</tbody>
 					</table>
 				</div>
-			</div>		
-			<div class="section" id="section-3">
-				<h2>Academic stats</h2>
-				<p>
-					I am from West Godavari, Andhra Pradesh and pursued Bachelor of technology degree from International Institute of Information Technology, Nuzvid(IIIT-Nuzvid) in the field of Mechanical engineering in the year of 2016.
-				</p>
-				<table class="academic-stats">
-					<thead>
-						<tr>
-							<th>Class</th>
-							<th>College/University</th>
-							<th>Year of Pass</th>
-							<th>Grade/Percentage</th>
-						</tr>
-					</thead>
-					
-					<tbody>
-						<tr>
-							<td>B.Tech(Mechanical)</td>
-							<td>International Institute of Information Technology(IIIT-Nuzvid), RGUKT</td>
-							<td>2016</td>
-							<td>8.58</td>
-						</tr>
-					</tbody>
-					
-					<tbody>
-						<tr>
-							<td>PUC/Intermediate</td>
-							<td>International Institute of Information Technology(IIIT-Nuzvid), RGUKT</td>
-							<td>2012</td>
-							<td>8.99</td>
-						</tr>
-					</tbody>
-					
-					<tbody>
-						<tr>
-							<td>SSC</td>
-							<td>Sri Chaitanya High School</td>
-							<td>2010</td>
-							<td>94.33%</td>
-						</tr>
-					</tbody>
-					
-				</table>
-			</div>
-			<div class="section" id="section-4">
-				<h2>Awards/Certifications</h2>
-				<ul>
-					<li>Awarded with the district first certification in a talent test named "Chakumuki" conducted by "Janvignan Vedik" in the year of 2009</li>
-					<li>Got Mandal first in the SSC examination with 94.33%</li>
-					<li>Awarded with the certificate of participation in the workshop conducted by National Institute of Technology, Warangal for the topic "Touch and Augmented control"</li>
-					<li>Awarded with the certificate of participation in the workshop conducted by Indian Institute of Technology, Madras for the topic of "Vehicle Overhauling"</li>
-				</ul>
-			</div>
+			</section>
+		</main>
+	</article>
+	<footer>
+		<div class="footer-links">
+			<li class="profile" id="linked-id">
+				<a href="https://www.linkedin.com/in/vikas-pulluri-210254" title="Linked-in profile" target="_blank">
+					<img src="./images/linkedin.svg">
+				</a>
+			</li>
+			<li class="profile" id="instagram">
+				<a href="https://www.instagram.com/vikaspulluri/" title="Instagram profile" target="_blank">
+					<img src="./images/instagram.svg">
+				</a>
+			</li>
+			<li class="profile" id="github">
+				<a href="https://github.com/vikaspulluri" title="Github profile" target="_blank">
+					<img src="./images/github.svg">
+				</a>
+			</li>
+			<li class="profile" id="hackerrank">
+				<a href="https://www.hackerrank.com/vikastheiiitn" title="Hackerrank profile" target="_blank">
+					<img src="./images/hackerrank.png">
+				</a>
+			</li>
 		</div>
-		<aside class="about-me" id="about-me">
-			<div class="image-holder">
-				<img src="images/vikas_dp.jpg">
-			</div>
-			<h1 class="text-header">About me</h1>
-			<blockquote class="text-holder">Hello, I am a professionally qualified web developer, currently working in TCS having experience of <span id="work-experience"></span> years. I am determined and self motivated person having good leadership qualities. I am enthusiast and passionate about web technology and willing to learn new technologies. I am a quick learner having own intuitive approach to get the things done.</blockquote>
-		</aside>
-	</div>
-	<footer class="footer">
-		<div class="contact-me">
-			<p>Contact me</p>
-			<ul id="social-list">
-				<li>
-					<a id="linked-in" href="https://www.linkedin.com/in/vikas-pulluri-210254" title="Linked in profile"><img src="images/linkedin_icon.svg" alt="linked-in profile"></a>
-				</li>
-				<li>
-					<a id="instagram" href="https://www.instagram.com/vikaspulluri/" title="Instagram profile"><img src="images/instagram_icon.svg" alt="instagram profile"></a>
-				</li>
-				<li id="mail">
-					<img src="images/mail_icon.svg" alt="mail id"><span>vikasiiitn@gmail.com</span>
-				</li>
-			</ul>
+		<div class="footer-content">
+			contact @ vikasiiitn@gmail.com
 		</div>
+		
 	</footer>
 </body>
-</html> 
+</html>
