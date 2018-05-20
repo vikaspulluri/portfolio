@@ -57,3 +57,31 @@ table.academic-stats tr{border-right: 1px solid black;}
 footer{background:url(../images/header_bg.jpg) repeat-x;background-size: auto 100%;}
 footer .footer-links{display: flex;list-style: none;margin: 0 auto;justify-content: center;padding: 15px;}
 footer .footer-content{display: block;margin: 0 auto; text-align: center;}
+
+/*Mobile screens styles goes here*/
+@media screen and (max-width: 768px), screen and (max-device-width: 768px){
+	.skills {width:  100%;display:  block;}
+	/*Table design for mobile view*/
+    table.academic-stats, .academic-stats thead, .academic-stats tbody, .academic-stats th, .academic-stats td, .academic-stats tr { display: block;margin-top: 0vw;}
+    .academic-stats tbody{margin-bottom: 1vw;}
+    .academic-stats tbody:last-child{margin-bottom: 0vw;}
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    .academic-stats thead tr { position: absolute;top: -9999px;left: -9999px;}
+    .academic-stats tr { border: 1px solid #ccc; }
+    .academic-stats td { 
+        /* Behave  like a "row" */
+        border: none;border-bottom: 1px solid #eee;position: relative;padding-left: 50%;
+    }
+    .academic-stats td:before { 
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;left: 6px;width: 45%;padding-right: 10px;white-space: nowrap;
+    }
+    /*Label the data*/
+    .academic-stats td:nth-of-type(1):before { content: "Course"; font-weight: bold;}
+    .academic-stats td:nth-of-type(2):before { content: "College/University"; font-weight: bold;}
+    .academic-stats td:nth-of-type(3):before { content: "Year of pass"; font-weight: bold;}
+    .academic-stats td:nth-of-type(4):before { content: "CGPA/Percentage"; font-weight: bold;}
+}
