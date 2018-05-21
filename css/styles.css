@@ -126,4 +126,5 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     .project-container-box{width: 90%;}
     .slick-arrow{z-index: 9;}
     blockquote{width: 90%;max-width: 100%}
+    section.about .image-holder img {width: 30vw;height: 30vw;border-radius: 15vw;}
 }
