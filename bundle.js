@@ -14,6 +14,8 @@ var scrollTo = require('jquery.scrollto');
 $(document).ready(function(){
 	//Calling calculate_experience(arg) function and adding the return value to div with id='work-experience'
 	$('#work-experience').text(calculate_experience("2016/07/28"));
+
+	toggle_nav_menu();
 	
 	$('.projects-carousel').slick({
 		infinite: true,
@@ -141,10 +143,12 @@ $(document).ready(function(){
 			yValueFormatString: "##0.00\"%\"",
 			indexLabel: "{label} {y}",
 			dataPoints: [
-				{y: 25, label: "Sass"},
-				{y: 25, label: "Gulp"},
-				{y: 25, label: "Webpack"},
-				{y: 25, label: "Git"}
+				{y: 20, label: "HTML"},
+				{y: 20, label: "CSS"},
+				{y: 20, label: "Sass"},
+				{y: 15, label: "Gulp"},
+				{y: 10, label: "Webpack"},
+				{y: 15, label: "Git"}
 			]
 		}]
 	});

@@ -58,6 +58,45 @@ footer{background:url(../images/header_bg.jpg) repeat-x;background-size: auto 10
 footer .footer-links{display: flex;list-style: none;margin: 0 auto;justify-content: center;padding: 15px;}
 footer .footer-content{display: block;margin: 0 auto; text-align: center;}
 
+@media screen and (max-width: 1024px), screen and (max-device-width: 1024px){
+	.nav-desktop{
+		display: none;
+		width: 100%;
+	}
+	nav.nav-mobile{
+		position: absolute;
+		left: 2vw;
+    	display: flex;
+    	width: 100%;
+	}
+	.nav-mobile .headline{
+		font-size: 1.5em;
+	    padding: 2vw 0;
+	    text-align: left;
+	    font-weight: 750;
+	}
+	.menu-btn {
+	    text-align: right;
+	    right: 3vw;
+	    position: absolute;
+	    top: 1vw;
+	}
+
+	.menu-btn span {width: 35px;height: 5px;background-color: white;margin: 8px 6px 6px 10px;-webkit-transition: 0.4s;transition: 0.4s;display: block;position: relative;z-index: 25;}
+    .menu-btn.open > #first-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, 16px) rotate(405deg);}
+    .menu-btn.open > #second-line {opacity: 0;}
+    .menu-btn.open > #third-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, -10px) rotate(-405deg);}
+    .nav-desktop ul {height:100vh;list-style: none;background: #1c1c1c;padding: 5px 0;margin-top:0;display: flow-root;z-index: 11;text-align: center;}
+    .nav-desktop li{float: none;border-bottom: dotted 4px;border-color: #ffae00;width: 100%;display: inline-flex;padding: 25px 0;} 
+    .nav-desktop li a {font-size:1rem;display: block;padding: 0 20px;color: #fff;text-decoration: none;font-weight: bold;text-transform: uppercase;letter-spacing: 0.1em;letter-spacing: 0.1em;line-height: 2em;height: 2em;border-bottom: 1px solid #383838;}    
+    .nav-desktop li:last-child a {border-bottom: none;}
+    .nav-desktop li a:hover,.nav-desktop li a:focus {color: #1c1c1c;background: #ccc;}
+
+    .academics-content{width: 95%;}
+    .academics-content table{font-size: 16px;}
+    section.certifications{background-size: cover;}
+}
+
 /*Mobile screens styles goes here*/
 @media screen and (max-width: 768px), screen and (max-device-width: 768px){
 	.skills {width:  100%;display:  block;}
@@ -81,7 +120,10 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     }
     /*Label the data*/
     .academic-stats td:nth-of-type(1):before { content: "Course"; font-weight: bold;}
-    .academic-stats td:nth-of-type(2):before { content: "College/University"; font-weight: bold;}
+    .academic-stats td:nth-of-type(2):before { content: "University"; font-weight: bold;}
     .academic-stats td:nth-of-type(3):before { content: "Year of pass"; font-weight: bold;}
-    .academic-stats td:nth-of-type(4):before { content: "CGPA/Percentage"; font-weight: bold;}
+    .academic-stats td:nth-of-type(4):before { content: "CGPA"; font-weight: bold;}
+    .project-container-box{width: 90%;}
+    .slick-arrow{z-index: 9;}
+    blockquote{width: 90%;max-width: 100%}
 }
