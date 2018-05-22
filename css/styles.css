@@ -59,29 +59,10 @@ footer .footer-links{display: flex;list-style: none;margin: 0 auto;justify-conte
 footer .footer-content{display: block;margin: 0 auto; text-align: center;}
 
 @media screen and (max-width: 1024px), screen and (max-device-width: 1024px){
-	.nav-desktop{
-		display: none;
-		width: 100%;
-	}
-	nav.nav-mobile{
-		position: absolute;
-		left: 2vw;
-    	display: flex;
-    	width: 100%;
-	}
-	.nav-mobile .headline{
-		font-size: 1.5em;
-	    padding: 2vw 0;
-	    text-align: left;
-	    font-weight: 750;
-	}
-	.menu-btn {
-	    text-align: right;
-	    right: 3vw;
-	    position: absolute;
-	    top: 1vw;
-	}
-
+	.nav-desktop{display: none;width: 100%;}
+	nav.nav-mobile{position: absolute;left: 2vw;display: flex;width: 100%;}
+	.nav-mobile .headline{font-size: 1.5em;padding: 2vw 0;text-align: left;font-weight: 750;}
+	.menu-btn {text-align: right;right: 3vw;position: absolute;top: 1vw;}
 	.menu-btn span {width: 35px;height: 5px;background-color: white;margin: 8px 6px 6px 10px;-webkit-transition: 0.4s;transition: 0.4s;display: block;position: relative;z-index: 25;}
     .menu-btn.open > #first-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, 16px) rotate(405deg);}
     .menu-btn.open > #second-line {opacity: 0;}
@@ -95,6 +76,7 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     .academics-content{width: 95%;}
     .academics-content table{font-size: 16px;}
     section.certifications{background-size: cover;}
+    .academics-content p {color: #ffeeff;text-align: left;margin-left: 10px;}
 }
 
 /*Mobile screens styles goes here*/
@@ -108,10 +90,7 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     /* Hide table headers (but not display: none;, for accessibility) */
     .academic-stats thead tr { position: absolute;top: -9999px;left: -9999px;}
     .academic-stats tr { border: 1px solid #ccc; }
-    .academic-stats td { 
-        /* Behave  like a "row" */
-        border: none;border-bottom: 1px solid #eee;position: relative;padding-left: 50%;
-    }
+    .academic-stats td {border: none;border-bottom: 1px solid #eee;position: relative;padding-left: 50%;}
     .academic-stats td:before { 
         /* Now like a table header */
         position: absolute;
@@ -127,4 +106,6 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     .slick-arrow{z-index: 9;}
     blockquote{width: 90%;max-width: 100%}
     section.about .image-holder img {width: 30vw;height: 30vw;border-radius: 15vw;}
+    .profile img {width: 10vw;height: 10vw;}
+    section.academics{background-size: cover;}
 }

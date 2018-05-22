@@ -8,12 +8,11 @@ This repo holds the basic portfolio files.
 - HTML
 - CSS
 - Javascript
-- JQuery
 
-### Mobile Portrait View
+## Libraries used
 
-![Alt text](/images/mobile_portrait.png?raw=true "Mobile Portrait View")
-
-### Mobile Landscape View
-
-![Alt text](/images/mobile_landscape.png?raw=true "Mobile Landscape View")
+- jquery
+- slick-carousel
+- jquery.scrollto
+- canvasjs
+- browserify
