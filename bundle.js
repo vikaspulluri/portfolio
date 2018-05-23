@@ -188,7 +188,7 @@ $(document).ready(function(){
 
 	//Using canvasJs to render the charts in programming skills section.
 	let languagesData = [{y: 45, label: "JavaScript"},{y: 30, label: "PHP"},{y: 25, label: "Python"}];
-	let frameworksData = [{y: 40, label: "jQuery"},{y: 20, label: "Angular-5"},{y: 20, label: "Node js"},{y: 10, label: "Foundation-6"},{y: 10, label: "Express js"}];
+	let frameworksData = [{y: 35, label: "jQuery"},{y: 25, label:"Drupal-8"},{y: 15, label: "Angular-5"},{y: 15, label: "Node js"},{y: 5, label: "Foundation-6"},{y: 5, label: "Express js"}];
 	let databasesData = [{y: 50, label: "MongoDB"},{y: 50, label: "MySql"}];
 	let additionalData = [{y: 20, label: "HTML"},{y: 20, label: "CSS"},{y: 20, label: "Sass"},{y: 15, label: "Gulp"},{y: 10, label: "Webpack"},{y: 15, label: "Git"}];
 	render_chart('languages-container','Programming Languages',languagesData);
