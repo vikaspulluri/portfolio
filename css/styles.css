@@ -61,7 +61,7 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
 @media screen and (max-width: 1024px), screen and (max-device-width: 1024px){
 	.nav-desktop{display: none;width: 100%;}
 	nav.nav-mobile{position: absolute;left: 2vw;display: flex;width: 100%;}
-	.nav-mobile .headline{font-size: 1.5em;padding: 2vw 0;text-align: left;font-weight: 750;}
+	.nav-mobile .headline{font-size: 1.5em;font-family:'Orbitron', sans-serif;padding: 2vw 0;text-align: left;font-weight: 750;}
 	.menu-btn {text-align: right;right: 3vw;position: absolute;top: 1vw;}
 	.menu-btn span {width: 35px;height: 5px;background-color: white;margin: 8px 6px 6px 10px;-webkit-transition: 0.4s;transition: 0.4s;display: block;position: relative;z-index: 25;}
     .menu-btn.open > #first-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, 16px) rotate(405deg);}
