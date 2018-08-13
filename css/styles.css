@@ -47,6 +47,17 @@ section.certifications{background: url(../images/certifications_bg.jpeg) no-repe
 section.academics{background: url('../images/academics_bg.jpg') no-repeat center;color: #000;font-size: 1.3em;font-weight: 700;}
 section#programming-skills {background: url(../images/professional_bg.jpg) no-repeat center;}
 
+/* Offline work */
+.offline-projects .projects{padding: .5em 0;}
+.offline-projects .project {margin:0 1em;width: 40%;min-height: 400px;border:1px solid #000;padding: .5em;background: #000;}
+.offline-projects .project .image img {width:100%;}
+.offline-projects .project h3 {text-align: center;text-transform: uppercase;}
+.offline-projects .technologies {text-align: center; }
+.offline-projects {background: url(../images/offline-bg.jpg);}
+.offline-projects .flickity-prev-next-button{display: none;}
+.offline-projects .links {text-align: center;}
+.offline-projects .links a {color: #fff;font-size: 1.2em;padding:.5em;}
+.offline-projects .links a .fas {width: 20px;height: 20px;color: #fff;}
 /*Table css*/
 table, tr, th, td {border: 1px solid black;border-collapse: collapse;margin-top: 1vw;}
 tr,th,td {padding: 10px;}
@@ -108,4 +119,6 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     section.about .image-holder img {width: 30vw;height: 30vw;border-radius: 15vw;}
     .profile img {width: 10vw;height: 10vw;}
     section.academics{background-size: cover;}
+    .offline-projects .project {margin:0 1em;width: 100%;min-height: 300px;border:1px solid #000;padding: .5em;background: #000;}
+    .offline-projects .flickity-prev-next-button{width:22px;height: 22px;display: block;}
 }

@@ -16,3 +16,6 @@ This repo holds the basic portfolio files.
 - jquery.scrollto
 - canvasjs
 - browserify
+
+## Commands to use
+browserify main.js -o bundle.js

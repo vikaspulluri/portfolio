@@ -17,6 +17,11 @@ global.jQuery = require('jquery');
 var $ = jQuery;
 var slick = require('slick-carousel');
 var scrollTo = require('jquery.scrollto');
+var jQueryBridget = require('jquery-bridget');
+var Flickity = require('flickity');
+
+// make Flickity a jQuery plugin
+jQueryBridget('flickity', Flickity, $);
 
 
 //Function to initiate slick-carousel for professional skills section
@@ -158,6 +163,13 @@ var toggle_nav_menu = function(){
 $(document).ready(function(){
 	//Calling calculate_experience(arg) function and adding the return value to div with id='work-experience'
 	$('#work-experience').text(calculate_experience("2016/07/28"));
+
+	$('#projects').flickity({
+		cellAlign: 'left',
+		contain: true,
+		wrapAround: true,
+		autoPlay: true
+	});
 
 	//Initiating toggle menu click events for mobile screens
 	toggle_nav_menu();
