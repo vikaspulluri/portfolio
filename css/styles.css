@@ -80,7 +80,7 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     .menu-btn.open > #third-line {-webkit-transform: translate(0, -10px) rotate(-405deg);transform: translate(0, -10px) rotate(-405deg);}
     .nav-desktop ul {height:100vh;list-style: none;background: #1c1c1c;padding: 5px 0;margin-top:0;display: flow-root;z-index: 11;text-align: center;}
     .nav-desktop li{float: none;border-bottom: dotted 4px;border-color: #ffae00;width: 100%;display: inline-flex;padding: 25px 0;} 
-    .nav-desktop li a {font-size:1rem;display: block;padding: 0 20px;color: #fff;text-decoration: none;font-weight: bold;text-transform: uppercase;letter-spacing: 0.1em;letter-spacing: 0.1em;line-height: 2em;height: 2em;border-bottom: 1px solid #383838;}    
+    .nav-desktop li a {font-size:.9rem;display: block;padding: 0 20px;color: #fff;text-decoration: none;font-weight: bold;text-transform: uppercase;letter-spacing: 0.1em;letter-spacing: 0.1em;line-height: 2em;height: 2em;border-bottom: 1px solid transparent;}    
     .nav-desktop li:last-child a {border-bottom: none;}
     .nav-desktop li a:hover,.nav-desktop li a:focus {color: #1c1c1c;background: #ccc;}
 
@@ -121,4 +121,13 @@ footer .footer-content{display: block;margin: 0 auto; text-align: center;}
     section.academics{background-size: cover;}
     .offline-projects .project {margin:0 1em;width: 100%;min-height: 300px;border:1px solid #000;padding: .5em;background: #000;}
     .offline-projects .flickity-prev-next-button{width:22px;height: 22px;display: block;}
+}
+
+@media screen and (max-width: 500px), screen and (max-device-width: 500px){
+    .nav-mobile .headline{
+        padding: 5vw 0;
+    }
+    .menu-btn{
+        top: 3vw;
+    }
 }
